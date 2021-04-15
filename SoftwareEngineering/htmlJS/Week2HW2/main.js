@@ -1,16 +1,16 @@
 
 
-
+// The argumentrs.length property provides the number of arguments actually passed to the function
 function numArguments() {
     return arguments.length
 }
 
-// let array=["Munar Hates Arianna", "God wants everyone to love each other"];
-let string ="Munar hates Arianna because she didn\'t hit him up"
 
+let string ="Munar hates how little HW there is"
 
-
-
+// method split method is used to split a string into an array of substrings, and returns the new array ('')the string is split between each character
+// .reverse() method reverses the order of the elements in an array
+// .join() returns the array as a string
 function reverseString(string){
     return string.split("").reverse().join("");
 }
@@ -20,7 +20,7 @@ let arrayL = array.length
 
 function findLongestWord(x){
 for(let x = 1; x<arrayL; x++){
-
+// we use the temp to switch the variable when the loop goes through to keep switching the variables
     if(array[x].length > array[0].length){
         let temp =array[x]
         array[x] = array[0]
@@ -33,7 +33,7 @@ for(let x = 1; x<arrayL; x++){
 }
 
 
-
+// we grab the longest word by grabing the length of each word
 let arrayW =['Howdy', 'Bookcase', 'Arianna', 'Marurico', 'Kevin']
 let wordsF=[];
 function filterLongWords(ar) {
@@ -46,3 +46,11 @@ function filterLongWords(ar) {
         }
         return wordsF
 }
+
+
+
+
+
+
+
+
