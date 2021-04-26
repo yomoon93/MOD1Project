@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+<script>
+let color = ["blue","orange", "red", "yellow"];
+let currentColor = 0;
+function colorChange(){
+    let container = document.getElementById('container')
+    let circles = container.getElementsByTagName('div')
+    for(let i=0; i<circles.length; i++){
+        circles[i].style.backgroundColor = color[currentColor]
+    }if(currentColor <color.length -1){
+        currentColor+=1
+    }else{
+        currentColor=0
+    }
+}
+
+</script>
+
+<style>
+    .grid-container{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows :1fr 1fr 1fr;
+        padding:15px;
+       
+       
+    }
+
+    .grid-item{
+       
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    background-color: salmon;
+    border-radius: 50%;
+
+    }
+ .grid-item:hover{
+     opacity: 0%;
+     
+ }
+
+
+ 
+
+  
+
+</style>
+</head>
+
+<body style="background-image:url(./img/Villains_Heros.png)"> 
+ <div class="grid-container" id="container" onclick="colorChange()">
+     <div class="grid-item" id="box1">1</div>
+     <div class="grid-item" id="box2">2</div> 
+    <div class="grid-item" id="box3">3</div>
+    <div class="grid-item" id="box4">4</div>
+    <div class="grid-item" id="box5">5</div>
+    <div class="grid-item" id="box6">6</div>
+    <div class="grid-item" id="box7">7</div>
+    <div class="grid-item" id="box8">8</div>
+    <div class="grid-item" id="box9">9</div>
+ </div>
+    
+
+
+</body>
+</html>
